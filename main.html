@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main .my-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+
+        .skills-cont {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .projects {
+            margin-top: 50px;
+        }
+
+        .project-cont {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .project {
+            background-color: rgb(93, 119, 142);
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .dark-mode {
+            background-color: #2d3748;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="p-4">
+        <label for="darkModeToggle" class="cursor-pointer flex justify-end p-4">
+            <input type="checkbox" id="darkModeToggle" class="hidden peer">
+            <div
+                class="bg-gray-200 text-gray-900 px-4 py-2 rounded shadow peer-checked:bg-gray-900 peer-checked:text-white">
+                Dark Mode
+            </div>
+        </label>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mx-auto p-4">
+        <div class="md:flex">
+            <div class="md:shrink-0">
+                <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://i.ibb.co/BT7xxL9/Abhay-pp.png"  alt="my img">
+            </div>
+            <div class="p-8">
+                <h1 class="uppercase tracking-wide text-3xl text-indigo-500 font-semibold">Abhay Singh Tomar</h1>
+                <p class="mt-2 text-slate-500">Passionate and driven first-year B.Tech student specializing in
+                    Electronics and Communication Engineering. With a strong foundation in programming languages and a
+                    keen interest in web development.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills container mx-auto mt-10 p-9">
+        <h2 class="text-3xl text-center mb-6">SKILLS</h2>
+        <div class="skills-cont">
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML"
+                    width="100">
+                <h3 class="text-center mt-5 ">HTML </h3>
+                <!-- <p class="t-5">I have a Advanceed Level Knowledge </p> -->
+            </div>
+            <div>
+                <img class="-mt-4" src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png"
+                    alt="CSS" width="120">
+                <h3 class="text-center mt-2">CSS</h3>
+            </div>
+            <div>
+                <img src="https://t3.ftcdn.net/jpg/05/79/39/50/360_F_579395046_c2dUrmuY1FS2Hfrf8yrc4fnyTJgHdmCl.jpg"
+                    alt="Video Editing" width="100">
+                <h3 class="text-center mt-2">Video Editing</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects container mx-auto mt-10 mb-9 p-9">
+        <h2 class="text-3xl text-center mb-6">PROJECTS</h2>
+        <div class="project-cont p-9">
+            <div class="project">
+                <h3 class="text-xl  text-center mb-6">Blog Home_Page</h3>
+                <p class="mb-5">In this project i tried to make a Home page of a Blog.</p>
+                <a href="https://github.com/abhaysinghtomar97/Blog-Homepage" class="text-white hover:text-green-500">View Project</a>
+            </div>
+            <div class="project">
+                <h3 class="text-xl text-center mb-6">Responsive Serive Page</h3>
+                <p class="mb-5">Here I made Serive Page Click Below to see.</p>
+                <a href="https://github.com/abhaysinghtomar97/Responsive-Service-Page" class="text-white hover:text-green-500">View Project</a>
+            </div>
+            <div class="project">
+                <h3 class="text-xl text-center mb-6">E-Commerce Product Page</h3>
+                <p class="mb-5">Here you will Find a page where Product Will Listed.</p>
+                <a href="https://github.com/abhaysinghtomar97/E-commerce-Product" class="text-white hover:text-green-500">View Project</a>
+            </div>
+            <div class="project">
+                <h3 class="text-xl text-center mb-6">Advanced Ragistration Page</h3>
+                <p class="mb-5">Tried to make a creative Form.</p>
+                <a href="https://github.com/abhaysinghtomar97/Advanced-Registration-Form" class="text-white hover:text-green-500">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="py-10 px-5 bg-gray-100 dark:bg-gray-800">
+        <h3 class="text-2xl font-bold mb-6 text-center">Contact Me</h3>
+        <form class="max-w-lg mx-auto">
+            <label for="name" class="block mb-2">Name</label>
+            <input type="text" id="name" class="w-full mb-4 p-2 rounded border dark:bg-gray-700">
+            <label for="email" class="block mb-2">Email</label>
+            <input type="email" id="email" class="w-full mb-4 p-2 rounded border dark:bg-gray-700">
+            <label for="message" class="block mb-2">Message</label>
+            <textarea id="message" class="w-full mb-4 p-2 rounded border dark:bg-gray-700"></textarea>
+            <button type="submit" class="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600">Send</button>
+        </form>
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const body = document.body;
+
+        // Check the localStorage for saved dark mode preference
+        if (localStorage.getItem("darkMode") === "true") {
+            body.classList.add("dark-mode");
+            darkModeToggle.checked = true;
+        }
+
+        // Toggle dark mode on checkbox change
+        darkModeToggle.addEventListener("change", () => {
+            if (darkModeToggle.checked) {
+                body.classList.add("dark-mode");
+                localStorage.setItem("darkMode", "true");
+            } else {
+                body.classList.remove("dark-mode");
+                localStorage.setItem("darkMode", "false");
+            }
+        });
+    </script>
+</body>
+
+</html>

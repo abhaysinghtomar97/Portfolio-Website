@@ -1,0 +1,10 @@
+
+Difficulty level 85% as we have Internals 😁.
+
+Learning :   tailwinds with half of their syntex,
+            also Dark mode btn still creating some issue but this tym it's fixed ,
+            java script i pasted from gpt , bcz its new to me , it takes time to fit in mind .
+            
+Approach :This portfolio showcases my skills and projects, offering insights into my journey as a B.Tech
+             student. With a focus on web development and design, it features interactive sections like skills, projects,
+              and contact Form, all with a modern and responsive layout.
